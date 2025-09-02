@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #E9E3D5;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111;
+}
+
+.landing-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.oppih-logo {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 1200;
+  text-transform: uppercase;
+  transform: scaleX(4) scaleY(0.7); /* Widen + flatten */
+  letter-spacing: -0.05em;
+  display: block; /* 👈 forces full-width for center alignment */
+  text-align: center;
+  font-size: 3rem;
+  color: #BC4934; /* 👈 try this one first — we can toggle easily */
+  margin: -10px 0 0px 0;  /* top | right | bottom | left */
+}
+
+.tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #333;
+}
+
+.cta {
+  margin-top: 80px;
+}
+
+.download-btn {
+  background: #FDF2DC;
+  color: #BC4934;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 0 #68bdb3;
+  transition: all 0.2s ease;
+  transform: scaleX(1.5) scaleY(0.7);
+  border: 1px solid #ccc;
+}
+
+.download-btn:hover {
+  background: #68bdb3;
+  color: #FDF2DC;
+  box-shadow: 0 2px 0 #BC4934;
+}
+
+.small-note {
+  font-size: 0.8rem;
+  margin-top: 18px;
+  color: #777;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.screenshot-box {
+  margin-top: 60px;
+}
+
+.screenshot-box img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.about {
+  margin-top: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #333;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+}
+
+.about p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.about-section {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  color: #BC4934;
+}
+
+.about-section p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+
+
+.footer {
+  margin-top: 100px;
+  font-size: 0.8rem;
+  color: #666;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: #BC4934;
+  text-decoration: none;
+  margin: 0 6px;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
