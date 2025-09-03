@@ -14,16 +14,17 @@ body {
 }
 
 .oppih-logo {
-  font-family: 'Antonio', sans-serif;
-  font-weight: 1200;
-  text-transform: uppercase;
-  transform: scaleX(4) scaleY(0.7); /* Widen + flatten */
-  letter-spacing: -0.05em;
-  display: block; /* 👈 forces full-width for center alignment */
-  text-align: center;
-  font-size: 3rem;
-  color: #BC4934; /* 👈 try this one first — we can toggle easily */
-  margin: -10px 0 0px 0;  /* top | right | bottom | left */
+  transform: scaleX(3) scaleY(2);
+  margin: -20px 0 0px 0;
+}
+
+.oppih-logo-link {
+  text-decoration: none;
+}
+
+.oppih-logo-link:hover .oppih-logo {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 .tagline {
