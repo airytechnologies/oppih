@@ -7,19 +7,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #f5f2ea;
+      font-family: 'Antonio', sans-serif;
+    }
+
+    .fullscreen-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="landing-container">
 
-            <!-- Oppih Logo as PNG -->
-    <a href="https://www.oppih.ai" target="_blank" rel="noopener noreferrer" class="oppih-logo-link">
-      <img src="oppih_logo.png" alt="Oppih Logo" class="oppih-logo" style="width: 160px; height: auto;" />
-    </a>
-    <p class="tagline">We’re preparing something new. Please check back soon.</p>
-    <footer class="footer">
-      <p>Airy Technologies LLC</p>
-      <p><a href="mailto:OPPIHEMAIL"></a> • <a href="https://github.com/YOUR_USERNAME/oppih" target="_blank"></a></p>
-    </footer>
-  </div>
+  <!-- Fullscreen Background Image -->
+  <img src="background.png" alt="Oppih Background" class="fullscreen-bg" />
+
+  <!-- Footer (optional) -->
+  <footer class="footer">
+    <p>Airy Technologies LLC</p>
+    <p><a href="mailto:OPPIHEMAIL">OPPIHEMAIL</a> • <a href="https://github.com/YOUR_USERNAME/oppih" target="_blank">GitHub</a></p>
+  </footer>
+
 </body>
 </html>
