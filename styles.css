@@ -362,14 +362,14 @@ body {
 @media screen and (max-width: 768px) {
   .main-nav a {
     top: 20%;
-    width: 90%;
+    width: 700px;
     font-size: 0.85rem;
   }
 
   .about-overlay,
   .contact-overlay,
   .download-overlay {
-    width: 200px;
+    width: 90%;
     top: 5%;
     font-size: 1rem;
   }
