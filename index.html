@@ -3,30 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <title>oppih</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      background-color: #f5f2ea;
-    }
-
-    .fullscreen-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- 🖥️ Background Image Only -->
+<!-- 📖 About Section Overlay -->
+<div class="about-overlay">
+  <div class="about-scrollbox">
+    <h2>about</h2>
+    <p>
+      Oppih is a software plugin that records your AI interactions and saves them directly to your computer. It currently integrates with ChatGPT: future support planned for all major LLMs.
+    </p>
+    <p>
+      Users can capture full ChatGPT threads with a single click. Each session is saved as a plain .txt file to your device, allowing you to retain ownership of intellectual property that would otherwise stay locked inside proprietary platforms.
+    </p>
+    <p>
+      Enabling logic in Oppih provides an alternate perspective behind the hidden structure each AI prompt and response has — including token weights, attention focus, and reasoning chains. It gives users a second-opinion into how outputs are shaped and inputs are interpreted, unlocking new ways to learn, debug, and better understand how large language models work.
+    </p>
+    <p>
+      Oppih is a free tool and we do not accept compensation for access to this application.
+    </p>
+  </div>
+</div>
+
+<!-- 📖 Contact Section Overlay -->
+<div class="contact-overlay">
+    <p>
+      hi@oppih.ai
+    </p>
+</div>
+
+<!-- 💾 Download Section Overlay -->
+<div class="download-overlay">
+    <div class="download-scrollbox">
+  <p>Version 1.0 · macOS only · 110 MB</p>
+  <p>click the button below to download</p>
+  <a href="oppih_v1.dmg" download class="download-btn">◎</a>
+</div>
+</div>
+
+  <!-- ✉️ Email Subscribe Section -->
+   <section id="more-section" class="email-subscribe">
+     <p>provide email for updates and news:</p>
+     <div class="email-form">
+       <input type="email" placeholder="you@example.com" />
+       <button type="submit">◎</button>
+     </div>
+   </section>
+
+
+  <!-- 🧭 Navigation Menu -->
+  <nav class="main-nav">
+    <a href="index.html">home</a>
+    <a >|</a>
+    <a href="#" id="about-toggle">about</a>
+    <a >|</a>
+    <a href="#" id="download-toggle">download</a>
+    <a >|</a>
+    <a href="#" id="contact-toggle">contact</a>
+    <a >|</a>
+    <a href="#" id="more-toggle">more</a>
+  </nav>
+
+  <!-- 🖥️ Background Image -->
   <img src="background.png" alt="Oppih Background" class="fullscreen-bg" />
+
+
+<script>
+  function hideAllOverlays() {
+    document.querySelector('.about-overlay').style.display = 'none';
+    document.querySelector('.contact-overlay').style.display = 'none';
+    document.querySelector('.email-subscribe').style.display = 'none';
+    document.querySelector('.download-overlay').style.display = 'none';
+  }
+
+  document.getElementById('about-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    const aboutOverlay = document.querySelector('.about-overlay');
+    const isVisible = aboutOverlay.style.display === 'block';
+    hideAllOverlays();
+    if (!isVisible) aboutOverlay.style.display = 'block';
+  });
+
+  document.getElementById('contact-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    const contactOverlay = document.querySelector('.contact-overlay');
+    const isVisible = contactOverlay.style.display === 'block';
+    hideAllOverlays();
+    if (!isVisible) contactOverlay.style.display = 'block';
+  });
+
+  document.getElementById('more-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    const emailSubscribe = document.querySelector('.email-subscribe');
+    const isVisible = emailSubscribe.style.display === 'block';
+    hideAllOverlays();
+    if (!isVisible) emailSubscribe.style.display = 'block';
+  });
+
+  document.getElementById('download-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    const overlay = document.querySelector('.download-overlay');
+    const isVisible = overlay.style.display === 'block';
+    hideAllOverlays();
+    if (!isVisible) overlay.style.display = 'block';
+  });
+
+</script>
+
 
 </body>
 </html>
