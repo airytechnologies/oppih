@@ -146,16 +146,20 @@ body {
 .main-nav {
   font-family: 'Source Code Pro', monospace;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   padding: 10px;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 30%; /* Centered vertically, more responsive */
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
-  margin-top: 200px;
-  margin-left: 500px;
-  
+  text-align: center;
+  width: auto; /* Let content determine width */
 }
+
+
 
 .main-nav a {
   text-decoration: none;
@@ -232,6 +236,7 @@ body {
   z-index: 9;
   font-family: 'Source Code Pro', monospace;
   color: #666;
+  top: 15%;
 }
 
 .email-subscribe p {
@@ -256,7 +261,7 @@ body {
 }
 
 .email-form button {
-  background: #FDF2DC;
+  background: rgba(255, 255, 255, 0.0); /* Transparent background */
   color: #BC4934;
   font-family: 'Barlow Condensed', sans-serif;
   border: none;
@@ -345,5 +350,45 @@ body {
   scrollbar-width: none; /* Firefox */
   margin-top: 50px;
   text-align: center;
+}
+
+.about-overlay,
+.contact-overlay,
+.download-overlay {
+  top: 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-nav a {
+    font-size: 0.8rem;
+  }
+
+  .about-overlay,
+  .contact-overlay,
+  .download-overlay {
+    width: 90%;
+    top: 20px;
+    font-size: 0.85rem;
+  }
+
+  .about-scrollbox,
+  .download-scrollbox {
+    font-size: 0.85rem;
+    padding: 0 8px;
+  }
+
+  .email-subscribe {
+    top: 200px;
+    font-size: 0.85rem;
+  }
+
+  .email-form input {
+    width: 180px;
+  }
+
+  .email-form button {
+    font-size: 1rem;
+  }
 }
 
