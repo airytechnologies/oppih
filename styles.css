@@ -362,6 +362,7 @@ body {
 @media screen and (max-width: 768px) {
   .main-nav a {
     top: 20%;
+    width: 90%;
     font-size: 0.85rem;
   }
 
@@ -380,7 +381,7 @@ body {
   }
 
   .email-subscribe {
-    top: 200px;
+    top: 10%;
     font-size: 1rem;
   }
 
