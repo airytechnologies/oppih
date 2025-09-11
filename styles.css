@@ -361,7 +361,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .main-nav a {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .about-overlay,
@@ -369,27 +369,27 @@ body {
   .download-overlay {
     width: 90%;
     top: 20px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .about-scrollbox,
   .download-scrollbox {
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 0 12px;
   }
 
   .email-subscribe {
     top: 200px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .email-form input {
     width: 200px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .email-form button {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
   }
 }
 
