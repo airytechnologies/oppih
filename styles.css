@@ -369,7 +369,7 @@ body {
   .about-overlay,
   .contact-overlay,
   .download-overlay {
-    width: 90%;
+    width: 200px;
     top: 5%;
     font-size: 1rem;
   }
