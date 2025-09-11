@@ -361,14 +361,15 @@ body {
 
 @media screen and (max-width: 768px) {
   .main-nav a {
-    font-size: 8rem;
+    top: 20%;
+    font-size: 1rem;
   }
 
   .about-overlay,
   .contact-overlay,
   .download-overlay {
     width: 90%;
-    top: 20%;
+    top: 15%;
     font-size: 1rem;
   }
 
