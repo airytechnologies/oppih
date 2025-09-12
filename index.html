@@ -10,6 +10,24 @@
 
 <body>
 
+  <!-- 🖥️ Background Image -->
+  <img src="background.png" alt="Oppih Background" class="fullscreen-bg" />
+
+ <div class="page-content">
+
+  <!-- 🧭 Navigation Menu -->
+  <nav class="main-nav">
+    <a href="#" id="home-toggle">home</a>
+    <a >|</a>
+    <a href="#" id="about-toggle">about</a>
+    <a >|</a>
+    <a href="#" id="download-toggle">download</a>
+    <a >|</a>
+    <a href="#" id="contact-toggle">contact</a>
+    <a >|</a>
+    <a href="#" id="more-toggle">more</a>
+  </nav>
+
 <!-- 📖 About Section Overlay -->
 <div class="about-overlay">
   <div class="about-scrollbox">
@@ -29,12 +47,10 @@
   </div>
 </div>
 
-<!-- 📖 Contact Section Overlay -->
-<div class="contact-overlay">
-    <p>
-      hi@oppih.ai
-    </p>
-</div>
+    <!-- 📖 Contact Section Overlay -->
+    <div class="contact-overlay">
+      <p>hi@oppih.ai</p>
+    </div>
 
 <!-- 💾 Download Section Overlay -->
 <div class="download-overlay">
@@ -45,32 +61,20 @@
 </div>
 </div>
 
-  <!-- ✉️ Email Subscribe Section -->
-   <section id="more-section" class="email-subscribe">
-     <p>provide email for updates and news:</p>
-     <div class="email-form">
-       <input type="email" placeholder="you@example.com" />
-       <button type="submit">◎</button>
-     </div>
-   </section>
+    <!-- ✉️ Email Subscribe Section -->
+    <div id="more-section" class="email-subscribe">
+      <p>provide email for updates and news:</p>
+      <div class="email-form">
+        <div class="input-row">
+          <input type="email" id="email-input" placeholder="you@example.com" />
+          <button type="submit" onclick="submitEmail()">◎</button>
+        </div>
+        <p id="email-feedback" class="email-feedback"></p>
+      </div>
+    </div>
 
 
-  <!-- 🧭 Navigation Menu -->
-  <nav class="main-nav">
-    <a href="index.html">home</a>
-    <a >|</a>
-    <a href="#" id="about-toggle">about</a>
-    <a >|</a>
-    <a href="#" id="download-toggle">download</a>
-    <a >|</a>
-    <a href="#" id="contact-toggle">contact</a>
-    <a >|</a>
-    <a href="#" id="more-toggle">more</a>
-  </nav>
-
-  <!-- 🖥️ Background Image -->
-  <img src="background.png" alt="Oppih Background" class="fullscreen-bg" />
-
+  </div> <!-- /.page-content -->
 
 <script>
   function hideAllOverlays() {
@@ -112,7 +116,56 @@
     if (!isVisible) overlay.style.display = 'block';
   });
 
+document.getElementById('home-toggle').addEventListener('click', function (e) {
+  e.preventDefault();
+  hideAllOverlays();
+});
+
+
 </script>
+
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  const client = supabase.createClient(
+    'https://ztpfmfwpakvmbebohoah.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp0cGZtZndwYWt2bWJlYm9ob2FoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNzI5NjcsImV4cCI6MjA3MDk0ODk2N30.TZbczALbHfAPXv1dR1zOmG9u8yz1i9mfCQRW1gw5Cig'
+  );
+</script>
+
+<script>
+  async function submitEmail() {
+  const emailInput = document.getElementById('email-input');
+  const feedback = document.getElementById('email-feedback');
+  const email = emailInput.value.trim();
+
+  // Clear old message
+  feedback.textContent = '';
+  feedback.style.color = '';
+
+  if (!email || !email.includes('@')) {
+    feedback.textContent = 'Please enter a valid email.';
+    feedback.style.color = '#777';
+    return;
+  }
+
+  const { data, error } = await client
+    .from('email_submissions')
+    .insert([{ email }]);
+
+  if (error) {
+    console.error('Supabase Error:', error);
+    feedback.textContent = 'There was a problem. Try again.';
+    feedback.style.color = '#777';
+  } else {
+    feedback.textContent = 'Submission Successful.';
+    feedback.style.color = '#777';
+    emailInput.value = '';
+  }
+}
+</script>
+
+
 
 
 </body>
