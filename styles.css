@@ -386,7 +386,7 @@ html, body {
     overflow: hidden !important;
     overscroll-behavior: none;
     touch-action: none;
-    top: 30vh;
+    top: 10vh;
   }
 
   .page-content {
