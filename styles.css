@@ -379,23 +379,33 @@ html, body {
 
 @media screen and (orientation: landscape) {
   html, body {
-    overflow: hidden; /* 🚫 no page scroll */
+    overflow: hidden !important; /* override any other rule */
+    touch-action: none;
   }
 
   .main-nav {
-    overflow: hidden; /* 🚫 no nav scroll */
+    overflow: hidden !important;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+
+  .page-content {
+    overflow: hidden !important;
   }
 
   .download-overlay,
   .contact-overlay {
-    overflow: hidden; /* 🚫 no overlay scroll */
+    overflow: hidden !important;
   }
 
   .about-overlay {
-    overflow-y: auto; /* ✅ only about can scroll */
+    overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
   }
 }
+
 
   @media screen and (orientation: portrait) {
   .main-nav {
