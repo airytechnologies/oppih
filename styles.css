@@ -369,11 +369,13 @@ html, body {
   display: none; /* Chrome, Safari */ 
 }
 
-.main-nav a { 
+.main-nav a { y
   font-size: clamp(0.75rem, 0vw, 0.85rem); 
   padding: 0.1rem 0.2em; 
   flex-shrink: 1; /* 🚀 let links shrink as needed */ 
 }
+}
+  
 
   @media screen and (orientation: landscape) {
   body {
