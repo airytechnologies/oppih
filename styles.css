@@ -400,7 +400,7 @@ html, body {
     margin: 0 auto 2vh auto;
     width: 90vw;
     max-width: 800px;
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   /* Menu bar below overlays */
