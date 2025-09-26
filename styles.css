@@ -318,6 +318,19 @@ html, body {
     white-space: nowrap;
   }
 
+  @media screen and (orientation: portrait) {
+  .main-nav {
+    top: 27vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .main-nav {
+    top: 15vh;
+  }
+}
+
+
   .main-nav a {
     font-size: clamp(0.6rem, 2vw, 0.8rem);
     padding: 0.3em 0.5em;
