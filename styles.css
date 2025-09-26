@@ -65,19 +65,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75vw;
-  padding: 2vh 5vw;
+  gap: 1.5vw;
+  padding: 1.5vh 4vw;
   position: absolute;
   top: 27vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+  box-sizing: border-box;
   text-align: center;
-  scrollbar-width: none; /* Firefox */
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 
 .main-nav::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
