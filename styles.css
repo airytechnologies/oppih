@@ -39,6 +39,31 @@ body {
   margin-top: 80px;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* 🚫 no page scroll */
+  background-color: #f5f2ea;
+}
+
+.main-nav {
+  overflow: hidden;  /* 🚫 no menu scroll */
+  white-space: nowrap;
+}
+
+.download-overlay,
+.contact-overlay {
+  overflow: hidden; /* 🚫 no scroll */
+}
+
+.about-overlay {
+  overflow-y: auto; /* ✅ only scrollable thing */
+  -webkit-overflow-scrolling: touch; /* smooth on iOS */
+}
+
+
 .download-btn {
   background: #FDF2DC;
   color: #BC4934;
