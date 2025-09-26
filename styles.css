@@ -386,7 +386,7 @@ html, body {
     overflow: hidden !important;
     overscroll-behavior: none;
     touch-action: none;
-    top: 10vh;
+    top: 20vh;
   }
 
   .page-content {
@@ -408,8 +408,8 @@ html, body {
       position: fixed;
       top: 0;
       left: 0;
-      width: 150%;
-      height: 150%;
+      width: 90%;
+      height: 90%;
       object-fit: cover;
     }
 }
