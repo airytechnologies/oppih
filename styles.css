@@ -375,6 +375,13 @@ html, body {
   flex-shrink: 1; /* 🚀 let links shrink as needed */ 
 }
 
+  @media screen and (orientation: landscape) {
+  body {
+    background-color: red !important;
+  }
+}
+
+
   @media screen and (orientation: portrait) { 
     .main-nav { top: 25vh; 
               } 
