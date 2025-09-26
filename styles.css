@@ -375,55 +375,35 @@ html, body {
   flex-shrink: 1; /* 🚀 let links shrink as needed */ 
 }
 
-@media screen and (orientation: landscape) and (max-width: 768px) {
-  html, body {
-    overflow-y: auto !important;
+@media screen and (orientation: landscape) { 
+  html, body { 
+overflow-y: auto !important;
     height: auto;
   }
 
-  .page-content {
-    padding-top: 35vh;
-    min-height: 150vh;
-    box-sizing: border-box;
+  .main-nav { 
+    overflow: hidden !important; 
+    overscroll-behavior: none; 
+    touch-action: none; 
+    top: 10vh; 
   }
 
-  .main-nav {
-    position: relative;
-    top: auto;
-    margin-bottom: 2rem;
+  .page-content { 
+    overflow: hidden !important; 
   }
 
-  .fullscreen-bg {
-    object-position: top center;
-    top: 15vh;
+  .download-overlay, .contact-overlay { 
+    overflow: hidden !important; 
   }
 
-  .about-overlay {
-    width: 90vw !important;
-    max-width: none !important;
-    max-height: none !important;
-    top: auto !important;
-    bottom: 5vh !important;
-    transform: translateX(-50%);
-    left: 50%;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    touch-action: pan-y;
-  }
-
-  .about-scrollbox {
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    text-align: left;
-    max-width: 100%;
-  }
-
-  .download-overlay,
-  .contact-overlay {
-    overflow: hidden;
-  }
+  .about-overlay { 
+    overflow-y: auto !important; 
+    -webkit-overflow-scrolling: touch; 
+    overscroll-behavior: contain; 
+    touch-action: pan-y; 
+  } 
 }
+
 
   @media screen and (orientation: portrait) { 
     .main-nav { top: 25vh; 
