@@ -94,12 +94,16 @@ html, body {
   padding: 2vh 5vw;
   position: absolute;
   top: 27vh;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 10;
-  width: 90vw;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .main-nav a {
@@ -347,13 +351,20 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .main-nav {
+    display: flex;
+    justify-content: space-between; /* distribute evenly */
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
     padding: 1.5vh 3vw;
-    gap: 2vw;
+    gap: 1vw;
     top: 12vh;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;   /* 🚫 remove scroll */
     overflow-y: hidden;
     white-space: nowrap;
-    max-width: 100vw;
-    scrollbar-width: none; /* Firefox */
   }
 
   .main-nav::-webkit-scrollbar {
@@ -361,8 +372,9 @@ html, body {
   }
 
   .main-nav a {
-    font-size: clamp(0.65rem, 3.5vw, 0.85rem);
-    padding: 0.3em 0.5em;
+    font-size: clamp(0.75rem, 0vw, 0.85rem);
+    padding: 0.1rem 0.2em;
+    flex-shrink: 1;  /* 🚀 let links shrink as needed */
   }
 
   @media screen and (orientation: portrait) {
@@ -381,7 +393,7 @@ html, body {
   .contact-overlay,
   .download-overlay {
     width: 90%;
-    top: 20px;
+    top: 5%;
     font-size: 1rem;
   }
 
@@ -392,7 +404,7 @@ html, body {
   }
 
   .email-subscribe {
-    top: 200px;
+    top: 10%;
     font-size: 1rem;
   }
 
@@ -405,7 +417,6 @@ html, body {
     font-size: 1.2rem;
   }
 }
-
 
 
 
