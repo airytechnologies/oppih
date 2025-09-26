@@ -63,23 +63,28 @@ body {
 .main-nav {
   font-family: 'Source Code Pro', monospace;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  padding: 10px;
+  align-items: center;
+  gap: .75vw;
+  padding: 2vh 5vw;
   position: absolute;
-  top: 30%; /* Centered vertically, more responsive */
+  top: 27vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 10;
+  width: 90vw;
+  max-width: 1000px;
   text-align: center;
-  width: auto; /* Let content determine width */
 }
 
 .main-nav a {
   text-decoration: none;
   color: #777;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem); /* fluid text */
   letter-spacing: 0.1em;
+  padding: 0.4em 0.8em;
+  white-space: nowrap;
 }
 
 .main-nav a:hover {
