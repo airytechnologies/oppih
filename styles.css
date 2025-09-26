@@ -386,14 +386,14 @@ html, body {
   .page-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 5vh; /* top space for overlays */
+    align-items: center; /* top space for overlays */
     min-height: 160vh; /* enough to scroll to see computer fully */
   }
 
   /* Overlays stay at the top */
   .about-overlay,
   .contact-overlay,
+  .email-subscribe,
   .download-overlay {
     position: relative;
     top: auto !important;
@@ -414,12 +414,11 @@ html, body {
 
   /* Background (computer image) pushed lower */
   .fullscreen-bg {
-    position: relative;
+    position: fixed;
     top: auto;
     margin-top: 5vh;
     object-fit: contain; /* ensures computer fits instead of covering */
-    height: auto;
-    max-height: 80vh;
+    height: auto
   }
 
   /* Overlays scrollable */
