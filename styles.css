@@ -377,10 +377,55 @@ html, body {
 }
   
 
-  @media screen and (orientation: landscape) {
-  body {
-    background-color: red !important;
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  html, body {
+    overflow-y: auto !important;
+    height: auto;
   }
+
+  .page-content {
+    padding-top: 35vh;
+    min-height: 150vh;
+    box-sizing: border-box;
+  }
+
+  .main-nav {
+    position: relative;
+    top: auto;
+    margin-bottom: 2rem;
+  }
+
+  .fullscreen-bg {
+    object-position: top center;
+    top: 15vh;
+  }
+
+  .about-overlay {
+    width: 90vw !important;
+    max-width: none !important;
+    max-height: none !important;
+    top: auto !important;
+    bottom: 5vh !important;
+    transform: translateX(-50%);
+    left: 50%;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+
+  .about-scrollbox {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .download-overlay,
+  .contact-overlay {
+    overflow: hidden;
+  }
+}
 }
 
 
