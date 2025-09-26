@@ -299,9 +299,6 @@ html, body {
   text-align: center;
 }
 
-
-
-@media screen and (max-width: 768px) {
 @media screen and (max-width: 768px) {
   .main-nav {
     display: flex;
@@ -330,7 +327,6 @@ html, body {
   @media screen and (orientation: portrait) {
   .main-nav {
     top: 25vh;
-    font-size: .9rem;
   }
 }
 
