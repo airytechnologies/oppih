@@ -348,82 +348,91 @@ html, body {
   border: 0;
 }
 
-/* Responsive Tweaks */
-@media screen and (max-width: 768px) {
-.main-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: nowrap;
-flex-shrink: 1;
-padding: 1.5vh 3vw;
-gap: 1vw;
-top: 12vh;
-width: 100%;
-max-width: 100%;
-box-sizing: border-box;
-overflow: hidden;
-white-space: nowrap;
+@media screen and (max-width: 768px) { 
+  .main-nav { 
+    display: flex; 
+    justify-content: space-between; /* distribute evenly */ 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    flex-shrink: 1; 
+    padding: 1.5vh 3vw; 
+    gap: 1vw; top: 12vh; 
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    overflow: hidden; /* 🚫 remove scroll */ 
+    overflow-y: hidden; 
+    white-space: nowrap; 
+  }
+
+.main-nav::-webkit-scrollbar { 
+  display: none; /* Chrome, Safari */ 
 }
 
-.main-nav a {
-font-size: clamp(0.75rem, 0vw, 0.85rem);
-padding: 0.1rem 0.2em;
-flex-shrink: 1;
+.main-nav a { 
+  font-size: clamp(0.75rem, 0vw, 0.85rem); 
+  padding: 0.1rem 0.2em; 
+  flex-shrink: 1; /* 🚀 let links shrink as needed */ 
 }
 
-.about-overlay,
-.contact-overlay,
-.download-overlay {
-width: 90%;
-top: 5%;
-font-size: 1rem;
+@media screen and (orientation: landscape) { 
+  html, body { 
+    overflow: hidden !important; /* override any other rule */ 
+    touch-action: none; 
+  }
+
+.main-nav { 
+  overflow: hidden !important; 
+  overscroll-behavior: none; 
+  touch-action: none; 
+  top: 10vh; 
 }
 
-.about-scrollbox,
-.download-scrollbox {
-font-size: 1rem;
-padding: 0 12px;
+.page-content { 
+  overflow: hidden !important; 
 }
 
-.email-subscribe {
-top: 10%;
-font-size: 1rem;
+.download-overlay, .contact-overlay { 
+  overflow: hidden !important; 
 }
 
-.email-form input {
-width: 200px;
-font-size: 1rem;
+.about-overlay { 
+  overflow-y: auto !important; 
+  -webkit-overflow-scrolling: touch; 
+  overscroll-behavior: contain; 
+  touch-action: pan-y; 
+  } 
+}
+  @media screen and (orientation: portrait) { 
+    .main-nav { top: 25vh; 
+              } 
+  }
+
+.about-overlay, 
+  .contact-overlay, 
+  .download-overlay { 
+    width: 90%; 
+    top: 5%; 
+    font-size: 1rem; 
+  }
+
+.about-scrollbox, 
+  .download-scrollbox { 
+    font-size: 1rem; 
+    padding: 0 12px; 
+  }
+
+.email-subscribe { 
+  top: 10%; 
+  font-size: 1rem; 
 }
 
-.email-form button {
-font-size: 1.2rem;
+.email-form input { 
+  width: 200px; 
+  font-size: 1rem; 
 }
+  
+.email-form button { 
+  font-size: 1.2rem; 
+  } 
 }
-
-/* ✅ Landscape Mobile Enhancements */
-@media screen and (orientation: landscape) and (max-width: 768px) {
-html, body {
-overflow-y: auto !important;
-height: auto;
-}
-
-.page-content {
-padding-top: 35vh;
-min-height: 150vh;
-box-sizing: border-box;
-}
-
-.main-nav {
-position: relative;
-top: auto;
-margin-bottom: 2rem;
-}
-
-.about-overlay {
-width: 90vw !important;
-max-width: none !important;
-}
-
-
-
