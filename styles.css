@@ -320,7 +320,7 @@ html, body {
   }
 
   .main-nav a {
-    font-size: 1rem;
+    font-size: clamp(0.65rem, 2vw, 0.85rem);
     padding: 0.3em 0.4em;
     flex-shrink: 1;  /* 🚀 let links shrink as needed */
   }
@@ -330,6 +330,7 @@ html, body {
   @media screen and (orientation: portrait) {
   .main-nav {
     top: 25vh;
+    font-size: .9rem;
   }
 }
 
