@@ -377,9 +377,23 @@ html, body {
     flex-shrink: 1;  /* 🚀 let links shrink as needed */
   }
 
-  @media screen and (orientation: portrait) {
+@media screen and (orientation: landscape) {
+  html, body {
+    overflow: hidden; /* 🚫 no page scroll */
+  }
+
   .main-nav {
-    top: 25vh;
+    overflow: hidden; /* 🚫 no nav scroll */
+  }
+
+  .download-overlay,
+  .contact-overlay {
+    overflow: hidden; /* 🚫 no overlay scroll */
+  }
+
+  .about-overlay {
+    overflow-y: auto; /* ✅ only about can scroll */
+    -webkit-overflow-scrolling: touch;
   }
 }
 
