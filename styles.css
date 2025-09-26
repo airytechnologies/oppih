@@ -382,7 +382,7 @@ html, body {
   }
 
       .fullscreen-bg {
-      position: fixed;
+      margin-top: 20vh;
       top: 30vh;
       left: 0;
       width: 100%;
