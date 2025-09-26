@@ -309,7 +309,7 @@ html, body {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    max-width: 50vw;
+    max-width: 90vw;
     scrollbar-width: none; /* Firefox */
   }
 
