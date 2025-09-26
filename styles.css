@@ -303,24 +303,28 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .main-nav {
+    display: flex;
+    justify-content: space-between; /* or center if preferred */
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
     padding: 1.5vh 3vw;
-    gap: 2vw;
+    gap: 1vw; /* smaller spacing to help it squeeze */
     top: 12vh;
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
     white-space: nowrap;
-    max-width: 90vw;
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .main-nav::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
   }
 
   .main-nav a {
-    font-size: clamp(0.65rem, 3.5vw, 0.85rem);
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
     padding: 0.3em 0.5em;
+    flex-shrink: 1; /* Let links shrink if needed */
   }
+}
+
 
   .about-overlay,
   .contact-overlay,
