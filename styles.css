@@ -375,20 +375,7 @@ html, body {
   flex-shrink: 1; /* 🚀 let links shrink as needed */ 
 }
 
-@media screen and (orientation: landscape) and (max-width: 768px) {
-  html, body {
-    overflow-y: auto !important;
-    height: auto;
-  }
-
-      .main-nav { top: 45vh; 
-              } 
-
-  .page-content {
-    padding-top: 35vh;
-    min-height: 150vh;
-    box-sizing: border-box;
-  }
+@media screen and (orientation: landscape) {
 
   .main-nav {
     position: relative;
