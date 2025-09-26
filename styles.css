@@ -385,7 +385,7 @@ html, body {
 
 @media screen and (orientation: landscape) {
   .main-nav {
-    top: 10vh;
+    top: 5vh;
   }
 }
 
