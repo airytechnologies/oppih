@@ -329,7 +329,7 @@ html, body {
 
   @media screen and (orientation: portrait) {
   .main-nav {
-    top: 20vh;
+    top: 25vh;
   }
 }
 
