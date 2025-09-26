@@ -393,10 +393,12 @@ html, body {
     margin-bottom: 2rem;
   }
 
-  .fullscreen-bg {
-    object-position: top center;
-    top: 15vh;
-  }
+.fullscreen-bg {
+  object-fit: cover;
+  object-position: top center;
+  transform: translateY(15vh); /* 👈 actually moves the image down visually */
+}
+
 
   .about-overlay {
     width: 90vw !important;
