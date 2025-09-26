@@ -320,13 +320,13 @@ html, body {
 
   @media screen and (orientation: portrait) {
   .main-nav {
-    top: 27vh;
+    top: 20vh;
   }
 }
 
 @media screen and (orientation: landscape) {
   .main-nav {
-    top: 15vh;
+    top: 10vh;
   }
 }
 
