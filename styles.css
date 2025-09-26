@@ -49,7 +49,7 @@ html, body {
 }
 
 .main-nav {
-  overflow: hidden;  /* 🚫 no menu scroll */
+  overflow: hidden;   /* 🚫 no nav scroll */
   white-space: nowrap;
 }
 
