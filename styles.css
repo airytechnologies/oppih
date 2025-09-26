@@ -381,6 +381,9 @@ html, body {
     height: auto;
   }
 
+      .main-nav { top: 45vh; 
+              } 
+
   .page-content {
     padding-top: 35vh;
     min-height: 150vh;
