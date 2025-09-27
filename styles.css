@@ -405,9 +405,9 @@ html, body {
 
   /* Menu bar below overlays */
   .main-nav {
-    position: relative;
+    position: fixed;
     margin: 2vh auto;
-    top: auto !important;
+    top: 10vh;
     order: 2; /* ensures it stacks after overlays */
     z-index: 10;
   }
