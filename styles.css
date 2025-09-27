@@ -417,7 +417,7 @@ html, body {
   position: fixed;
   top: 0;          /* flush with top */
   left: 0;         /* flush with left */
-  width: 100vw;    /* span full viewport width */
+  width: 150vw;    /* span full viewport width */
   height: 100vh;   /* span full viewport height */
   margin: 0;       /* no margin */
   object-fit: cover;       /* scale up to cover entire viewport */
