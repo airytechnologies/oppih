@@ -390,11 +390,10 @@ html, body {
     min-height: 160vh; /* enough to scroll to see computer fully */
   }
 
-.contact-overlay,
 .email-subscribe,
 .download-overlay {
   position: fixed;
-  top: 20vh;
+  top: 26vh !important;  
   left: 30vw; /* ⬅ pushes it into the left whitespace */
   width: 20vw;
   max-height: 80vh;
