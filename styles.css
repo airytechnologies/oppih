@@ -395,7 +395,7 @@ html, body {
   .contact-overlay,
   .email-subscribe,
   .download-overlay {
-    position: relative;
+    position: fixed;
     top: auto !important;
     margin: 0 auto 2vh auto;
     width: 90vw;
