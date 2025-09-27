@@ -392,7 +392,7 @@ html, body {
 
 .email-subscribe {
   position: fixed;
-  top: 26vh !important;  
+  top: 35vh !important;  
   left: 10vw; /* ⬅ pushes it into the left whitespace */
   max-width: 50vw;
   max-height: 80vh;
