@@ -410,7 +410,7 @@ html, body {
   top: 18vh;
   left: 26vw;                  /* ✔ tighter into the whitespace */
   width: 10vw;                 /* ✔ narrower, fits nicely */
-  max-height: 75vh;
+  max-width: 20vw;
   font-size: 0.52rem;
   text-align: left;
   z-index: 20;
