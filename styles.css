@@ -413,13 +413,17 @@ html, body {
   }
 
   /* Background (computer image) pushed lower */
-  .fullscreen-bg {
-    position: fixed;
-    top: auto;
-    margin-top: 5vh;
-    object-fit: contain; /* ensures computer fits instead of covering */
-    height: auto
-  }
+.fullscreen-bg {
+  position: fixed;
+  top: 0;          /* flush with top */
+  left: 0;         /* flush with left */
+  width: 100vw;    /* span full viewport width */
+  height: 100vh;   /* span full viewport height */
+  margin: 0;       /* no margin */
+  object-fit: cover;       /* scale up to cover entire viewport */
+  object-position: center; /* keep computer centered */
+  z-index: -1;     /* stay behind everything else */
+}
 
   /* Overlays scrollable */
   .about-overlay {
