@@ -410,7 +410,7 @@ html, body {
   position: fixed;
   top: 18vh;
   left: 26vw;                  /* ✔ tighter into the whitespace */
-  transform: translateX(-50%);
+  transform: translateX(-75%);
   width: 10vw;                 /* ✔ narrower, fits nicely */
   max-height: 75vh;
   font-size: 0.52rem;
