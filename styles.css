@@ -430,12 +430,7 @@ html, body {
   touch-action: pan-y;
 }
 
-  .about-scrollbox,
-.download-scrollbox,
-.contact-overlay,
-.email-subscribe {
-  font-size: 0.6rem !important;
-}
+
 
 .email-form input {
   font-size: 0.6rem !important;
