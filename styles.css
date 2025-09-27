@@ -396,11 +396,9 @@ html, body {
   .email-subscribe,
   .download-overlay {
     position: fixed;
-    top: auto !important;
-    margin: 0 auto 2vh auto;
+    top: 20vh;
     width: 90vw;
     max-width: 800px;
-    font-size: 0.5rem;
   }
 
   /* Menu bar below overlays */
