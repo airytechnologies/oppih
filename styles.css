@@ -390,15 +390,19 @@ html, body {
     min-height: 160vh; /* enough to scroll to see computer fully */
   }
 
-  /* Overlays stay at the top */
-  .about-overlay,
-  .contact-overlay,
-  .email-subscribe,
-  .download-overlay {
-    position: fixed;
-    width: 90vw;
-    max-width: 800px;
-  }
+.about-overlay,
+.contact-overlay,
+.email-subscribe,
+.download-overlay {
+  position: fixed;
+  top: 10vh;
+  left: 4vw;                /* 👈 shift to the left */
+  width: 40vw;              /* 👈 narrower, fits to the left */
+  max-height: 80vh;
+  font-size: 0.6rem;        /* 👈 smaller font to match menu */
+  z-index: 20;              /* stays above background and behind nav */
+  background: rgba(255, 255, 255, 0); /* transparent */
+}
 
   /* Menu bar below overlays */
   .main-nav {
@@ -430,11 +434,12 @@ html, body {
     touch-action: pan-y;
   }
 
-  .about-scrollbox, 
-  .download-scrollbox { 
-    font-size: 0.5rem; 
-    padding: 0 12px; 
-  }
+.about-scrollbox,
+.download-scrollbox {
+  font-size: 0.6rem;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
 }
 
   @media screen and (orientation: portrait) { 
