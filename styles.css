@@ -390,7 +390,6 @@ html, body {
     min-height: 160vh; /* enough to scroll to see computer fully */
   }
 
-.about-overlay,
 .contact-overlay,
 .email-subscribe,
 .download-overlay {
@@ -406,6 +405,23 @@ html, body {
   background: rgba(255, 255, 255, 0);
 } 
 
+  
+.about-overlay {
+  position: fixed;
+  top: 18vh;
+  left: 26vw;                  /* ✔ tighter into the whitespace */
+  transform: translateX(-50%);
+  width: 18vw;                 /* ✔ narrower, fits nicely */
+  max-height: 75vh;
+  font-size: 0.52rem;
+  text-align: left;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0);
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
 
   .about-scrollbox,
 .download-scrollbox,
