@@ -433,13 +433,6 @@ html, body {
     overscroll-behavior: contain;
     touch-action: pan-y;
   }
-
-.about-scrollbox,
-.download-scrollbox {
-  font-size: 0.6rem;
-  padding: 0.5rem 1rem;
-  text-align: left;
-}
 }
 
   @media screen and (orientation: portrait) { 
