@@ -395,7 +395,7 @@ html, body {
 .email-subscribe,
 .download-overlay {
   position: fixed;
-  top: 12vh;
+  top: 20vh;
   left: 20vw; /* ⬅ pushes it into the left whitespace */
   transform: translateX(-50%);
   width: 40vw;
@@ -404,8 +404,8 @@ html, body {
   text-align: left;
   z-index: 20;
   background: rgba(255, 255, 255, 0);
-} transparent */
-}
+} 
+
 
   .about-scrollbox,
 .download-scrollbox,
