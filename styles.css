@@ -407,10 +407,10 @@ html, body {
   
 .about-overlay {
   position: fixed;
-  top: 18vh;
+  top: 38vh;
   left: 26vw;                  /* ✔ tighter into the whitespace */
   width: 10vw;                 /* ✔ narrower, fits nicely */
-  max-width: 20vw;
+  max-width: 50vw;
   font-size: 0.52rem;
   text-align: left;
   z-index: 20;
