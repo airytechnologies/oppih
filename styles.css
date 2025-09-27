@@ -414,11 +414,22 @@ html, body {
   background: rgba(255, 255, 255, 0);
 } 
 
+  .contact-overlay {
+  position: fixed;
+  top: 26vh !important;  
+  left: 30vw; /* ⬅ pushes it into the left whitespace */
+  max-width: 50vw;
+  max-height: 80vh;
+  font-size: 0.6rem !important;
+  text-align: left;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0);
+} 
   
 .about-overlay {
   position: fixed;
   top: 26vh !important;  
-  left: 26vw;                  /* ✔ tighter into the whitespace */            /* ✔ narrower, fits nicely */
+  left: 29vw;                  /* ✔ tighter into the whitespace */            /* ✔ narrower, fits nicely */
   max-width: 50vw;
   font-size: 0.52rem;
   text-align: left;
