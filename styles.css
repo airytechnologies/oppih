@@ -396,9 +396,9 @@ html, body {
 .download-overlay {
   position: fixed;
   top: 20vh;
-  left: 20vw; /* ⬅ pushes it into the left whitespace */
+  left: 40vw; /* ⬅ pushes it into the left whitespace */
   transform: translateX(-50%);
-  width: 40vw;
+  width: 20vw;
   max-height: 80vh;
   font-size: 0.6rem;
   text-align: left;
