@@ -408,7 +408,7 @@ html, body {
   left: 30vw; /* ⬅ pushes it into the left whitespace */
   max-width: 50vw;
   max-height: 80vh;
-  font-size: 0.6rem;
+  font-size: 0.6rem !important;
   text-align: left;
   z-index: 20;
   background: rgba(255, 255, 255, 0);
