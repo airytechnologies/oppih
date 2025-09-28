@@ -420,7 +420,7 @@ html, body {
   left: 30vw; /* ⬅ pushes it into the left whitespace */
   max-width: 50vw;
   max-height: 80vh;
-  font-size: 0.6rem !important;
+  font-size: 1rem !important;
   text-align: left;
   z-index: 20;
   background: rgba(255, 255, 255, 0);
@@ -439,16 +439,6 @@ html, body {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   touch-action: pan-y;
-}
-
-
-
-.email-form input {
-  font-size: 0.6rem !important;
-}
-
-.email-form button {
-  font-size: 0.7rem !important;
 }
 
   /* Menu bar below overlays */
